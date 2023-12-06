@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Error from './Error'
 import useSelectMonedas from '../hooks/useSelectMonedas'
-import { Monedas } from '../data/Monedas'
+import { Monedas } from '../data/Monedas.js'
 
 
 const InputSubmit = styled.input`
