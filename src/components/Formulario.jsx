@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Error from './Error'
 import useSelectMonedas from '../hooks/useSelectMonedas'
-import { monedas } from '../data/Monedas.js';
+import { Monedas } from '../data/Monedas'
 
 
 const InputSubmit = styled.input`
@@ -27,7 +27,7 @@ const Formulario = ({setMonedas}) => {
     const [criptos, setCriptos] = useState([])
     const [error, setError] = useState(false)
 
-    const [ moneda, SelectMonedas ] = useSelectMonedas('Elige tu Moneda', monedas)
+    const [ moneda, SelectMonedas ] = useSelectMonedas('Elige tu Moneda', Monedas)
     const [ criptomoneda, SelectCriptomoneda ] = useSelectMonedas('Elige tu Criptomoneda', criptos)
 
     useEffect(() => {
